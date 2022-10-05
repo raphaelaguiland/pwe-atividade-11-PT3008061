@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>HOME - IFSP - Pirituba - PWE</title>
+  <link rel="icon" type="image/ico" sizes="16x16" href="./assets/img/favicon.ico">
+
+  <link href="./assets/css/style.css" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+</head>
+
+<body>
+  <header class="cabecalho" id="cabecalho"></header>
+  <main>
+    <section class="secao__carrossel">
+        <div class="secao__carrossel__lista__item animacao">
+          <p class="secao__carrossel__lista__item__paragrafo-numeracao">1/4</p>
+          <img class="secao__carrossel__lista__item__imagem" src="./assets/img/agenda_ifsp.png" alt="Imagem Agenda IFSP">
+        </div>
+        <div class="secao__carrossel__lista__item animacao">
+          <p class="secao__carrossel__lista__item__paragrafo-numeracao">2/4</p>
+          <img class="secao__carrossel__lista__item__imagem" src="./assets/img/combate_ifsp.jpg" alt="Imagem Combate ao Coronavírus no IFSP">
+        </div>
+        <div class="secao__carrossel__lista__item animacao">
+          <p class="secao__carrossel__lista__item__paragrafo-numeracao">3/4</p>
+          <img class="secao__carrossel__lista__item__imagem" src="./assets/img/vestibular_ifsp.jpg" alt="Imagem Vestibular Enem no IFSP">
+        </div>
+        <div class="secao__carrossel__lista__item animacao">
+          <p class="secao__carrossel__lista__item__paragrafo-numeracao">4/4</p>
+          <section class="secao__inovacao">
+            <h2 class="secao__inovacao__titulo">Conheça os desafios de inovação!</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/5g5LQe3m8Po" title="YouTube video player"
+              frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </section>
+        </div>
+
+      <a class="secao__carrossel__link__voltar" onclick="botaoSlides(-1)">&#10094;</a>
+      <a class="secao__carrossel__link__avancar" onclick="botaoSlides(1)">&#10095;</a>
+
+      <div class="secao__carrossel__conteiner-indicadores" style="text-align:center">
+        <span class="secao__carrossel__conteiner-indicadores__indicador" onclick="atualSlide(1)"></span>
+        <span class="secao__carrossel__conteiner-indicadores__indicador" onclick="atualSlide(2)"></span>
+        <span class="secao__carrossel__conteiner-indicadores__indicador" onclick="atualSlide(3)"></span>
+        <span class="secao__carrossel__conteiner-indicadores__indicador" onclick="atualSlide(4)"></span>
+      </div>
+    </section>
+    <section class="secao__acontecimentos">
+      <section class="secao__acontecimentos__eleicoes">
+        <img class="secao__acontecimentos__eleicoes__imagem" src="./assets/img/eleicoes.jpg" alt="Imagem que representa as eleições do IFSP" width="50%" height="50%">
+        <h5 class="secao__acontecimentos__eleicoes__titulo">Radar IFSP: informe-se sobre as eleições do dia 13 de outubro</h5>
+        <p class="secao__acontecimentos__eleicoes__paragrafo">Todos os alunos e servidores podem votar; acesse aqui a cabine de votação online do seu câmpus</p>
+      </section>
+      
+      <section class="secao__acontecimentos__snct">
+        <img class="secao__acontecimentos__snct__imagem" src="./assets/img/snct.jpg" alt="Imagem que representa o evento da SNCT do IFSP" width="50%" height="50%">
+        <h5 class="secao__acontecimentos__snct__titulo">IFSP: SNCT reúne atividades entre 19 e 24 de outubro</h5>
+        <p class="secao__acontecimentos__eleicoes__paragrafo">Programação reunirá iniciativas para aproximar pesquisadores e atividades culturais</p>
+      </section>
+      
+      <section class="secao__acontecimentos__residencia">
+        <img class="secao__acontecimentos__residencia__imagem" src="./assets/img/residencia.png" alt="Imagem que representa o evento da Residência Pedagógica 2020 do IFSP" width="50%" height="50%">
+        <h5 class="secao__acontecimentos__residencia__titulo">IFSP oferece bolsa aos voluntários da Residência Pedagógica</h5>
+        <p class="secao__acontecimentos__residencia__paragrafo">Bolsa de R$ 400,00 será paga pelo período de três meses</p>
+      </section>
+
+      <section class="secao__acontecimentos__maratona">
+        <img class="secao__acontecimentos__maratona__imagem" src="./assets/img/maratona.jpeg" alt="Imagem que representa o evento de Maratona de Programação do IFSP" width="50%" height="50%">
+        <h5 class="secao__acontecimentos__maratona__titulo">Inscrições abertas para a III Maratona InterIF</h5>
+        <p class="secao__acontecimentos__maratona__paragrafo">Maratona de programação do IFSP será realizada online, no dia 31 de outubro; inscrições até 26 de outubro</p>
+      </section>
+    
+    </section>
+    <section class="secao__eventos">
+      <h1 class="secao__eventos__titulo">Acontece no IFSP!</h1>
+      <img class="secao__eventos__imagem" src="./assets/img/seja_raro.jpg" class="imagem-seja_raro"
+        alt="Imagem da Palestra Seja Raro do Instituto Federal de São Paulo, Câmpus Pirituba">
+      <p class="section__eventos__paragrafo">Aniversário do IFSP - Pirituba - Palestra Augusto Aielo</p>
+    </section>
+
+    <section class="secao__biblioteca">
+      <h2 class="secao__biblioteca__titulo">Sobre a Biblioteca</h2>
+      <img class="secao__biblioteca__imagem" src="./assets/img/biblioteca.jpeg">
+      <h2 class="secao__biblioteca__titulo">Conheça os novos títulos disponíveis na nossa biblioteca</h2>
+      <h6 class="secao__biblioteca__subtitulo">Publicado: Quarta-feira, 30 de março de 2022</h6> <br />
+    </section>
+
+    <section class="secao__suap">
+      <h2 class="secao__suap__titulo">Conheça o SUAP</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/yVbOcB1ryh0" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </section>
+  </main>
+  <footer class="rodape" id="rodape"></footer>
+      <script src="./assets/js/carrossel.js"></script>
+</body>
+
+</html>

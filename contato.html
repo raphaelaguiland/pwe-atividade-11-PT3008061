@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>CONTATO - IFSP - PIRITUBA - PWE</title>
+  <link rel="icon"  type="image/ico" sizes="16x16" href="./assets/img/favicon.ico">
+
+  <link href="./assets/css/style.css" rel="stylesheet" type="text/css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+  <script src="./assets/js/script.js"></script>
+</head>
+
+<body>
+  <header class="cabecalho" id="cabecalho"></header>
+
+  <main>
+    <section class="secao__formulario">
+      <h1 class="secao__formulario__titulo">Mande uma mensagem</h1>
+      <form class="formulario__mensagem" action="#">
+        <fieldset class="formulario__dados__pessoais">
+          <ul class="formulario__lista">
+            <li class="formulario__lista__item">
+              <div class="formulario__mensagem__conteiner">
+                <label class="formulario__mensagem__label" for="input_nome">Nome</label>
+                <input name="nome" type="text" id="input_nome" class="formulario__mensagem__input" required> 
+              </div>
+            </li>
+            <li class="formulario__lista__item">
+              <div class="formulario__mensagem__conteiner">
+                <label class="formulario__mensagem__label" for="input_email">E-mail</label>
+                <input name="email" type="email" id="input_email" class="formulario__mensagem__input" required> 
+              </div>
+            </li>
+            <li class="formulario__lista__item">
+              <div class="formulario__mensagem__conteiner">
+                <label class="formulario__mensagem__label" for="input_telefone">Telefone</label>
+                <input name="nome" type="tel" id="input_telefone" class="formulario__mensagem__input" placeholder="(99) 99999-9999"> 
+              </div>
+            </li>
+            <li class="formulario__lista__item">
+              <div class="formulario__mensagem__conteiner">
+                <label class="formulario__mensagem__label" for="input_assunto">Assuntos</label>
+                <select class="formulario__mensagem__assuntos__selecionar" id="input_assunto" required>
+                  <option class="assuntos__opcao" selected disabled value>-- Selecione --</option>
+                  <option class="assuntos__opcao" value="reclamacao">Reclamação</option>
+                  <option class="assuntos__opcao" value="sugestao">Sugestão</option>
+                </select>
+              </div>
+            </li>
+            <li class="formulario__lista__item">
+              <div class="formulario__mensagem__conteiner">
+                <label class="formulario__mensagem__label" for="mensagem">Mensagem</label>
+                <textarea class="formulario__mensagem__textarea" name="mensagem" id="mensagem" required></textarea>
+              </div>
+            </li>
+             <li class="formulario__lista__item">
+              <fieldset class="formulario__opcoes_de_resposta">
+                <legend class="formulario__sublegenda">Opcoes de Resposta</legend>
+                <label for="email">E-mail</label>
+                <input name="email" type="checkbox" id="email" value="email">
+
+                <label for="telefone">Telefone</label>
+                <input name="telefone" type="checkbox" id="telefone" value="telefone">
+              </fieldset>
+            </li>
+            <li class="formulario__lista__item--botao">
+              <button class="formulario__mensagem__botao" type="submit">Enviar</button>
+            </li>
+          </ul>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+  <footer class="rodape" id="rodape"></footer>
+</body>
+</html>

@@ -1,0 +1,492 @@
+/*Reset CSS*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  
+}
+
+
+/*Cabeçalho*/
+.cabecalho {
+  margin: .2rem 1rem 1.5rem 1rem;
+  background-color: #333;
+}
+
+.cabecalho__navegacao {
+  display: inline;
+  margin-top: 1rem;
+}
+
+.navegacao__lista {
+  list-style-type: none; 
+  display: flex;
+}
+
+.navegacao__lista__item {
+  margin-right: 1.5rem;
+  padding: 1rem;
+}
+
+.conteiner__navegacao__lista__item {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+
+.navegacao__lista__item:hover {
+  background-color: red;
+  cursor: pointer;
+}
+
+.navegacao__lista__item__link {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.navegacao__sublista {
+  display: none;
+  position: absolute;
+  margin-left: -1rem;
+  box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+}
+
+.navegacao__sublista__item {
+  width: 100%;
+}
+
+.navegacao__sublista__item {
+  background-color: #ebebeb;
+  list-style-type: none;
+  padding: 1rem;
+}
+
+.navegacao__sublista__item:hover {
+  background: #ded4d4;
+}
+
+.navegacao__lista__item--cursos:hover .navegacao__sublista {
+  display: block;
+  margin-top: 1rem;
+}
+
+.navegacao__sublista__item__link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.cabecalho__logo {
+  background: green;
+}
+
+.cabecalho__logo__imagem {
+  margin-left: .8rem;
+}
+
+/*Rodapé*/
+footer {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  margin-left: .8rem;
+}
+
+
+/*Index*/
+.secao__cursos {
+  display: none;
+}
+
+.secao__acontecimentos {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-top: 3rem;
+  place-items: center;
+}
+
+.secao__acontecimentos__eleicoes, .secao__acontecimentos__snct, .secao__acontecimentos__residencia, .secao__acontecimentos__maratona {
+  text-align: center;
+}
+
+.secao__acontecimentos__residencia, .secao__acontecimentos__maratona {
+  margin-top: 3rem;
+}
+
+.secao__acontecimentos__eleicoes__imagem, .secao__acontecimentos__snct__imagem, .secao__acontecimentos__residencia__imagem, .secao__acontecimentos__maratona__imagem {
+  margin-bottom: 0.5rem;
+}
+
+.secao__acontecimentos__eleicoes__paragrafo, .secao_acontecimentos__snct__paragrafo, .secao__acontecimentos__residencia__paragrafo, .secao__acontecimentos__maratona__paragrafo {
+  font-size: 12px;
+  text-align: center;
+}
+
+.secao__eventos {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 12rem;
+}
+
+.secao__inovacao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 3rem;
+}
+
+.secao__eventos__titulo, .secao__inovacao__titulo {
+  margin-bottom: .8rem;
+  
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.secao__eventos__imagem {
+  border-radius: 100%;
+  
+  width: 40%;
+  height: 50%;
+}
+
+.section__eventos__paragrafo {
+  margin-top: .8rem;
+  
+  border: 1px dotted blue; 
+  
+  width: 80%;
+  
+  text-align: center;
+}
+
+.secao__biblioteca {
+  display: none;
+}
+
+.secao__biblioteca__imagem {
+  width: 10%;
+  height: 25%;
+}
+
+.secao__suap {
+  display: none;
+}
+
+/*Formulários*/
+.formulario__legenda {
+  font-size: 20px;
+  font-weight: bold;
+  
+  margin: 0;
+}
+
+.formulario__legenda h1 {
+  margin: 0;
+}
+
+
+/*Formulários - Configurações gerais*/
+.formulario__mensagem__label, .formulario__mensagem__input, .formulario__mensagem__assuntos__selecionar, .formulario__mensagem__textarea {
+  margin-bottom: .3rem;
+} 
+
+.formulario__eventos, .formulario__acesso, .formulario__informacoes__pessoais {
+  padding: 1rem;
+  margin-bottom: .5rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario__acesso__container, .formulario__informacoes_pessoais__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario__acesso__input, .formulario__dados__pessoais__input, .formulario__mensagem__input, .formulario__mensagem__assuntos__selecionar, .formulario__entrar__input {
+  padding: .8rem;
+
+  padding: .8rem;
+  
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.formulario__informacoes_pessoais__container, .formulario__informacoes_pessoais__container, .formulario__acesso__container, .formulario__sexo {
+  margin-bottom: 1rem;
+}
+
+.formulario__sobre__botao, input[type=submit], input[type=reset], .formulario__mensagem__botao, .formulario__entrar__botao {
+  margin-bottom: 1rem;
+  padding: .8rem;
+
+  border: none;
+  border-radius: 5px;
+
+  background-color: #4CAF50;
+  color: #FFFFFF;
+
+  text-align: center;
+
+  cursor: pointer;
+}
+
+.formulario__sobre__botao:hover, .formulario__mensagem__botao:hover, .formulario__entrar__botao:hover {
+  background-color: #439346;
+}
+
+
+/*Formulário Entrar*/
+/* .formulario__dados__entrar {
+  border: none;
+}
+
+.formulario__entrar__input {
+  margin-bottom: 1rem;
+}
+
+.formulario__entrar__container {
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+
+  
+  background-color: #f2f2f2;
+  border-radius: 15px;
+  
+  display: flex;
+  flex-direction: column;
+} */
+
+
+/*Formulário Contato*/
+.formulario__dados__pessoais {
+  border: none;
+}
+
+.formulario__mensagem__conteiner {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario__mensagem__textarea {
+  height: 3rem;
+
+  border: 1px solid #ccc;
+}
+
+.formulario__opcoes_de_resposta {
+  padding: 1rem;
+}
+
+.formulario__lista__item--botao {
+  list-style-type: none;
+}
+
+.formulario__mensagem__botao {
+  margin-top: 2rem;
+  
+  width: 100% 
+}
+
+/*Formulário Eventos*/
+.secao__formulario {
+  margin: 0 .8rem 0 .8rem;  
+}
+
+.secao__formulario__titulo {
+  font-size: 2rem;
+
+  margin: 1.5rem 0 1.5rem 0;
+}
+
+.formulario__eventos__label {
+  margin-bottom: .3rem;
+}
+
+.formulario__eventos__selecionar {
+  padding: .8rem;
+  
+  border-radius: 5px;
+}
+
+.formulario__acesso__sublegenda {
+  margin-bottom: 1.2rem;
+}
+
+.formulario__sexo {
+  padding: 1rem;
+}
+
+.formulario__sexo__label {
+  margin-right: .2rem;
+}
+
+.formulario__sobre__container__botao {
+  margin-top: 1rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/*Formulário Contato*/ 
+.formulario__mensagem {
+  margin: 0 2rem 0 2rem;
+}
+
+.formulario__dados__pessoais {
+  display: flex;
+  flex-direction: column;
+}
+
+/*Páginas de Cursos*/
+.cabecalho__titulo {
+  margin: 0;
+}
+
+.secao__apresentacao {
+  margin: 0 1.5rem 0 1.5rem;
+}
+
+
+/*Carrossel*/
+.secao__carrossel {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.secao__carrossel__link__voltar, .secao__carrossel__link__avancar {
+  cursor: pointer;
+  
+  position: absolute;
+  top: 50%;
+  
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 18px;
+  
+  transition: .6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.secao__carrossel__link__voltar:hover, .secao__carrossel__link__avancar:hover {
+  background: rgba(0,0,0,0.8);
+}
+
+.secao__carrossel__link__avancar {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.secao__carrossel__lista__item__paragrafo-numeracao {
+  color:  #F2F2F2;
+  font-size: 12px;
+  
+  padding: 8px 12px;
+  
+  position: absolute;
+  top: 0;
+}
+
+.secao__carrossel__conteiner-indicadores__indicador {
+  cursor: pointer;
+  
+  height: 15px;
+  width: 15px;
+  
+  margin: 0 2px;
+  background-color: #bbb;
+  
+  border-radius: 50%;
+  
+  display: inline-block;
+  
+  transition: background-color 0.6s ease;
+}
+
+.ativo, .secao__carrossel__conteiner-indicadores__indicador:hover {
+  background-color: #717171;
+}
+
+.animacao {
+  animation-name: animacao;
+  animation-duration: 1.5s;
+}
+
+.secao__carrossel__lista__item {
+  display: none;
+}
+
+@keyframes animacao {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.secao__carrossel__lista__item__imagem {
+  width: 100%;
+}
+
+.secao__formulario__imagem {
+  width: 100px;
+}
+
+.form-signin.m-auto.text-center {
+    width: 30%;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.btn.btn-lg.btn-primary {
+    display: block;
+    margin: 0 auto;
+}
+
+#input_senha, #input_usuario {
+    padding: 10px;
+}
+
+
+/*ADS*/
+.titulo-tabela {
+  text-align: center;
+  font-family: arial, sans-serif;
+}
+
+.tabela {
+  width: 100%;
+}
+
+.tabela tr {
+  text-align: center;
+}
+
+.tabela-dados:nth-child(even){
+  background-color: #eee8e8;
+}
+
+.tabela-dados:hover {
+  background-color: #cccccc;
+}
+
+.tabela td {
+  padding: .5rem;
+}
+
+.tabela-cabecalho {
+  background:  #4CAF50;
+  color: #ffffff;
+}
+
+.tabela-cabecalho th {
+  padding: .5rem;
+}

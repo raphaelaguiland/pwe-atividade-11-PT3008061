@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>EVENTOS - IFSP - PIRITUBA - PWE</title>
+  <link rel="icon"  type="image/ico" sizes="16x16" href="./assets/img/favicon.ico">
+  <link href="./assets/css/style.css" rel="stylesheet" type="text/css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+  <script src="./assets/js/script.js"></script>
+</head>
+
+<body>
+  <header class="cabecalho" id="cabecalho"></header>
+<main>
+  <section class="secao__formulario">
+    <h1 class="secao__formulario__titulo">Inscreva-se</h1>
+    <form class="formulario__sobre" action="#" method="post">
+      <fieldset class="formulario__eventos">
+        <label class="formulario__eventos__label" for="eventos">Eventos</label>
+        <select id="eventos" class="formulario__eventos__selecionar" required>
+          <option value="" selected disabled>-- Selecione --</option>
+          <option value="voe_sem_asas">Voe sem Asas</option>
+          <option value="festa_junina">Festa Junina</option>
+          <option value="semana_de_tecnologia">Semana de Tecnologia</option>
+        </select>
+      </fieldset>
+
+      <fieldset class="formulario__acesso">
+        <legend class="formulario__acesso__sublegenda">Informações de Acesso</legend>
+        <div class="formulario__acesso__container">
+          <label for="input_usuario">Usuário</label>
+          <input name="input_usuario" type="text" id="input_usuario" class="formulario__acesso__input" required>
+        </div>
+
+        <div class="formulario__acesso__container">
+          <label for="input_senha">Senha</label>
+          <input name="input_senha" type="password" id="input_senha" class="formulario__acesso__input" required>
+        </div>
+
+        <div class="formulario__acesso__container">
+          <label for="input_confirma_senha">Confirme a senha</label>
+          <input name="input_confirma_senha" type="password" id="input_confirma_senha" class="formulario__acesso__input" required>  
+        </div> 
+      </fieldset>  
+
+      <fieldset class="formulario__informacoes__pessoais">
+        <legend class="formulario__acesso__sublegenda">Informações Pessoais</legend>
+
+        <div class="formulario__informacoes_pessoais__container">
+          <label for="input_nome_completo">Nome completo</label>
+          <input name="input_nome_completo" type="text" id="input_nome_completo" class="formulario__dados__pessoais__input" required>
+        </div>
+
+        <div class="formulario__informacoes_pessoais__container">
+          <label for="input_email">E-mail</label>
+          <input name="input_email" type="email" id="input_email" class="formulario__dados__pessoais__input" required>
+        </div>
+
+        <div class="formulario__informacoes_pessoais__container">
+          <label for="input_celular">Celular</label>
+          <input name="input_celular" type="tel" id="input_celular" class="formulario__dados__pessoais__input" placeholder="(99) 99999-9999" pattern="^\([1-9]{2}\)\s+(\d{5}|\d{4})-(\d{4})$">
+          </div>
+        
+        <fieldset class="formulario__sexo">
+          <legend class="formulario__sexo__sublegenda">Sexo</legend>
+          <label class="formulario__sexo__label" for="input_feminino">Feminino</label>
+          <input name="input_sexo" type="radio" id="input_feminino" class="formulario__sexo__input" value="feminino">
+
+          <label class="formulario__sexo__label" for="input_masculino">Masculino</label>
+          <input name="input_sexo" type="radio" id="input_masculino" class="formulario__sexo__input" value="masculino">
+        </fieldset>
+
+        <div class="formulario__informacoes_pessoais__container">
+          <label for="input_data_de_nascimento">Data de Nascimento</label>
+          <input name="input_data_de_nascimento" type="date" id="input_data_de_nascimento" class="formulario__dados__pessoais__input" >
+        </div>
+
+        <div class="formulario__informacoes_pessoais__container">
+          <label for="input_cor">Cor favorita</label>
+          <input name="input_cor" type="color" id="input_cor" class="formulario__dados__pessoais__input--color">
+        </div>
+
+        <div class="formulario__informacoes_pessoais__container">
+          <label for="input_usuario_github">Perfil do GitHub</label>
+          <input name="input_usuario_github" type="url" id="input_usuario_github" class="formulario__dados__pessoais__input">
+        </div>
+      </fieldset>
+      <div class="formulario__sobre__container__botao">
+        <button class="formulario__sobre__botao" type="submit">Inscrever</button>
+        <button class="formulario__sobre__botao" type="reset">Limpar</button>
+      </div>
+    </form>
+    
+  </section>
+</main>
+  <footer class="rodape" id="rodape"></footer>
+</body>
+</html>
